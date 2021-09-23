@@ -4,7 +4,7 @@ open System
 [<EntryPoint>]
 let main argv =
 
-    let lista = [1..51]
+    let lista = [1..10]
     let pares = [for i in lista do if i%2=0 then yield i]
     printfn "La cantidad de pares es: %d" (pares.Length)
     printfn("Pares: %A") pares
